@@ -29,10 +29,18 @@ This will generate something like this depending on your log4j configuration:
 =Development=
 Contact me by adding a comment if you want to participate.
 ==Source code==
-http://logfacade.googlecode.com/svn/trunk/
+http://logfacade.googlecode.com/svn/trunk/ (read only)
 
 ==Build with maven2==
+To make your own build is really easy and straight forward.
+
+===Requirements===
+  * JDK version 5 or later
+  * Maven 2.0.7 or later
+If you never used maven2 before you can download and read about it here http://maven.apache.org/
+
+===Build process===
   # Checkout the code
   # Open a console and move to your checked out {{{LogFacade}}} directory
-  # Run maven2 command {{{>mvn clean install}}}
+  # Run maven2 command {{{mvn clean package}}}
   # Check your {{{LogFacade/target}}} directory for your new jar file
