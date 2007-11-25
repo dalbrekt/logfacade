@@ -1,0 +1,17 @@
+#summary How to use Log Facade
+
+{{{
+public class MyClass {
+    private static final Log log = LogFactory.getLog(MyClass.class);
+    
+    public void myMethod() {
+        log.debug("Log %s message %d times", "this", 10);
+        ...
+    }
+
+}
+}}}
+
+This will generate something like this depending on your log4j configuration: 
+
+{{{2007-11-25 15:38:42,312 DEBUG [main] com.jworx.logfacade.MyClass.myMethod(MyClass.java:21) - Log this message 10 times}}}
