@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jworx.logfacade</groupId>
+	<artifactId>LogFacade</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<description>
+		Log Facade supports printf style message format for performance
+		and ease of use. Log facade is a simple wrapper that makes Java
+		5 features available when using Log4j.
+	</description>
+	<inceptionYear>2007</inceptionYear>
+	<contributors>
+		<contributor>
+			<name>Tony Dalbrekt</name>
+			<email>tony@jworx.com</email>
+			<organization>jWorx</organization>
+			<url>http://wiki.jworx.com</url>
+		</contributor>
+	</contributors>
+	<issueManagement>
+		<system>Google code</system>
+		<url>http://code.google.com/p/logfacade/issues/list.</url>
+	</issueManagement>
+	<scm>
+		<connection>
+			http://logfacade.googlecode.com/svn/trunk/
+		</connection>
+		<developerConnection>https://logfacade.googlecode.com/svn/trunk/</developerConnection>
+		<url>http://logfacade.googlecode.com/svn/trunk/</url>
+	</scm>
+	<repositories>
+		<repository>
+			<releases>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>fail</checksumPolicy>
+			</snapshots>
+			<id>mavenrepo</id>
+			<name>Repo1 Maven2</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.mail</groupId>
+					<artifactId>activation</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.jms</groupId>
+					<artifactId>jms</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>
+
