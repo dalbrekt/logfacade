@@ -1,5 +1,6 @@
 #summary How to use Log Facade
 
+=Retrieve and use a log instance=
 {{{
 public class MyClass {
     private static final Log log = LogFactory.getLog(MyClass.class);
