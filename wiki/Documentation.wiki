@@ -1,0 +1,48 @@
+#summary Log Facade documentation
+
+= About =
+
+Log Facade supports printf style message format for performance and ease of use. Log facade is a simple wrapper that makes Java 5 features available by enable the use of var args in your log statements.
+
+  * No need to use {{{if}}} statement to check log level before logging. No string manipulation/concatenation is made if log level isn't enabled.
+  * No risk of wrapping business logic in {{{if}}} statements when checking if log level is enabled.
+  * Less code.
+  * If you are afraid of loosing a few ms because of the creation of new java.lang.String objects when entering the logging method you can still wrap your log statements with {{{if(log.isDebugEnabled()){ //log here... }}}}.
+
+= Usage =
+
+{{{
+public class MyClass {
+    private static final Log log = LogFactory.getLog(MyClass.class);
+    
+    public void myMethod() {
+        log.debug("Log %s message %d times", "this", 10);
+        ...
+    }
+
+}
+}}}
+This will generate something like this depending on your log4j configuration: 
+
+{{{2007-11-25 15:38:42,312 DEBUG [main] com.jworx.logfacade.MyClass.myMethod(MyClass.java:21) - Log this message 10 times}}}
+
+=Development=
+If you want to participate, send me an email.
+
+==Source code==
+http://logfacade.googlecode.com/svn/trunk/ (read only)
+
+==Build with maven2==
+To make your own build is really easy and straight forward.
+
+===Requirements===
+  * JDK version 5 or later
+  * Maven 2.0.7 or later
+
+If you never used maven2 before you can download and read about it here http://maven.apache.org/
+
+===Build process===
+  # Checkout the code
+  # Open a console and move to your checked out {{{LogFacade}}} directory
+  # Run maven2 command {{{mvn clean package}}}
+  # Check your {{{LogFacade/target}}} directory for your new jar file
