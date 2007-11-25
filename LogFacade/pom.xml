@@ -5,6 +5,7 @@
 	<groupId>com.jworx.logfacade</groupId>
 	<artifactId>LogFacade</artifactId>
 	<version>1.0-SNAPSHOT</version>
+	<name>Log Facade</name>
 	<description>
 		Log Facade supports printf style message format for performance and ease of use. Log facade is a simple wrapper
 		that makes Java 5 features available when using Log4j.
