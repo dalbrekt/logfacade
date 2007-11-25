@@ -28,6 +28,9 @@ This will generate something like this depending on your log4j configuration:
 
 =Development=
 Contact me by adding a comment if you want to participate.
+==Source code==
+http://logfacade.googlecode.com/svn/trunk/
+
 ==Build with maven2==
   # Checkout the code
   # Open a console and move to your checked out {{{LogFacade}}} directory
