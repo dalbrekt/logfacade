@@ -1,4 +1,4 @@
-#summary Log Facade project documentation
+#summary Log Facade documentation
 
 = About =
 
