@@ -7,8 +7,8 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>Log Facade</name>
 	<description>
-		Log Facade supports printf style message format for performance and ease of use. Log facade is a simple wrapper
-		that makes Java 5 features available when using Log4j.
+		Supports printf style message format for performance and ease of use and extends log4j logging api with Java 5
+		var args.
 	</description>
 	<inceptionYear>2007</inceptionYear>
 	<contributors>
