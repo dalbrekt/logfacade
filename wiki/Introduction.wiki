@@ -28,7 +28,7 @@ This will generate something like this depending on your log4j configuration:
 
 =Development=
 Contact me (Tony Dalbrekt) if you want to participate.
-==Build with Maven2==
+==Build with maven2==
   # Checkout the code
   # Open a console and move to your checked out {{{LogFacade}}} directory
   # Run maven2 command {{{>mvn clean install}}}
