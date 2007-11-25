@@ -38,7 +38,7 @@ To make your own build is really easy and straight forward.
 ===Requirements===
   * JDK version 5 or later
   * Maven 2.0.7 or later
-  * log4j-1.2.15
+
 If you never used maven2 before you can download and read about it here http://maven.apache.org/
 
 ===Build process===
