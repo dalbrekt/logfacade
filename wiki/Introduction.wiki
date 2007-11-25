@@ -27,7 +27,7 @@ This will generate something like this depending on your log4j configuration:
 {{{2007-11-25 15:38:42,312 DEBUG [main] com.jworx.logfacade.MyClass.myMethod(MyClass.java:21) - Log this message 10 times}}}
 
 =Development=
-Contact me by adding a comment if you want to participate.
+If you want to participate,contact me by adding a comment or guess my email address.
 ==Source code==
 http://logfacade.googlecode.com/svn/trunk/ (read only)
 
