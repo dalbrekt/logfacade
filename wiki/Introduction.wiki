@@ -17,6 +17,7 @@ public class MyClass {
     
     public void myMethod() {
         log.debug("Log %s message %d times", "this", 10);
+        ...
     }
 
 }
