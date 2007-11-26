@@ -36,7 +36,7 @@ If you want to participate, send me an email.
 http://logfacade.googlecode.com/svn/trunk/ (read only)
 
 ==Build with maven2==
-To make your own build is really easy and straight forward.
+A binary distribution is not yet available. Follow the steps below to make your own build.
 
 ===Requirements===
   * JDK version 5 or later
