@@ -16,7 +16,7 @@ Log Facade supports printf style message format for performance and ease of use.
 
 {{{
 public class MyClass {
-    private static final Log log = LogFactory.getLog(MyClass.class);
+    private final Log log = LogFactory.getLog(MyClass.class);
     
     public void myMethod() {
         log.debug("Log %s message %d times", "this", 10);
