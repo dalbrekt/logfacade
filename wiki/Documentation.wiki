@@ -9,7 +9,10 @@ Log Facade supports printf style message format for performance and ease of use.
   * Less code.
   * If you are afraid of loosing a few ms because of the creation of new java.lang.String objects when entering the logging method you can still wrap your log statements with {{{if(log.isDebugEnabled()){ //log here... }}}}.
 
-= Usage =
+=License=
+[http://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0]
+
+=Howto=
 
 {{{
 public class MyClass {
