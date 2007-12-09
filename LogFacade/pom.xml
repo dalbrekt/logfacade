@@ -28,7 +28,7 @@
 	</contributors>
 	<issueManagement>
 		<system>Google code</system>
-		<url>http://code.google.com/p/logfacade/issues/list.</url>
+		<url>http://code.google.com/p/logfacade/issues/list</url>
 	</issueManagement>
 	<scm>
 		<connection>http://logfacade.googlecode.com/svn/trunk/</connection>
