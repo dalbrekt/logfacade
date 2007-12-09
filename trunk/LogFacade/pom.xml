@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jworx.logfacade</groupId>
-	<artifactId>LogFacade</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<artifactId>logfacade</artifactId>
+	<version>1.1-SNAPSHOT</version>
 	<name>Log Facade</name>
 	<description>
 		Supports printf style message format for performance and ease of use and extends log4j logging api with Java 5
