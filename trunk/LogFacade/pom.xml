@@ -10,6 +10,13 @@
 		Supports printf style message format for performance and ease of use and extends log4j logging api with Java 5
 		var args.
 	</description>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 	<inceptionYear>2007</inceptionYear>
 	<contributors>
 		<contributor>
