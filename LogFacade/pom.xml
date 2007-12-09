@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jworx.logfacade</groupId>
 	<artifactId>logfacade</artifactId>
-	<version>1.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>Log Facade</name>
 	<description>
 		Supports printf style message format for performance and ease of use and extends log4j logging api with Java 5
