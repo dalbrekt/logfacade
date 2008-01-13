@@ -29,6 +29,16 @@ This will generate something like this depending on your log4j configuration:
 
 {{{2007-11-25 15:38:42,312 DEBUG [main] com.jworx.logfacade.MyClass.myMethod(MyClass.java:21) - Log this message 10 times}}}
 
+==Maven 2==
+To use with Maven 2 add the following dependency to your pom.xml:
+{{{
+<dependency>
+    <groupId>com.jworx.logfacade</groupId>
+    <artifactId>logfacade</artifactId>
+    <version>1.0</version>
+</dependency>
+}}}
+
 =Development=
 If you want to participate, send me an email.
 
