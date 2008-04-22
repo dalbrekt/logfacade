@@ -6,6 +6,7 @@
 	<artifactId>logfacade</artifactId>
 	<version>1.1</version>
 	<name>Log Facade</name>
+	<url>http://code.google.com/p/logfacade/</url>
 	<description>
 		Supports printf style message format for performance and ease of use and extends log4j logging api with Java 5
 		var args.
