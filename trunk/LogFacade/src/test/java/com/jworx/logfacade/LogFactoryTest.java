@@ -15,28 +15,26 @@
  */
 package com.jworx.logfacade;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 public class LogFactoryTest {
 
-    @Test
-    public void verifyNoDuplicateLogInstances() {
+	@Test
+	public void verifyNoDuplicateLogInstances() {
 
-        Log log1 = LogFactory.getLog("log name 1");
-        Log log2 = LogFactory.getLog("log name 1");
-        assertEquals(log1.toString(), log2.toString());
+		Log log1 = LogFactory.getLog("log name 1");
+		Log log2 = LogFactory.getLog("log name 1");
+		assertEquals(log1.toString(), log2.toString());
 
-        log2 = LogFactory.getLog("log name 2");
-        assertNotNull(log1.toString(), log2.toString());
-    }
+		log2 = LogFactory.getLog("log name 2");
+		assertNotNull(log1.toString(), log2.toString());
+	}
 
-    @SuppressWarnings("unused")
-    @Test(expected = NullPointerException.class)
-    public void verifyFailureWhenNameIsNull() {
-        Log log = LogFactory.getLog((String) null);
-    }
-
+	@SuppressWarnings("unused")
+	@Test(expected = NullPointerException.class)
+	public void verifyFailureWhenNameIsNull() {
+		Log log = LogFactory.getLog((String) null);
+	}
 }

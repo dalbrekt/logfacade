@@ -20,50 +20,46 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 
-import com.jworx.logfacade.log4j.LogByLog4j;
-
 /**
  * Creates and manages log instances.
  */
 public class LogFactory {
 
-    // Cache containg unique log instances. No more then one log instance per
-    // given name can exist.
-    private static final Map<String, Log> logMap = new HashMap<String, Log>();
+	// Cache containg unique log instances. No more then one log instance per
+	// given name can exist.
+	private static final Map<String, Log> logMap = new HashMap<String, Log>();
 
-    /**
-     * Retrieve a log instance named according to the value of the
-     * <code>name</code> parameter. If the named log instance already exists,
-     * then the existing one will be returned. Otherwise, a new instance is
-     * created.
-     * 
-     * @see Logger#getLogger(String)
-     * 
-     * @param name Name of the log instance to retrieve
-     * @return An implementation of the {@link Log} interface
-     */
-    public static Log getLog(String name) {
-        Log log = null;
+	/**
+	 * Retrieve a log instance named according to the value of the
+	 * <code>name</code> parameter. If the named log instance already exists,
+	 * then the existing one will be returned. Otherwise, a new instance is
+	 * created.
+	 * 
+	 * @see Logger#getLogger(String)
+	 * 
+	 * @param name Name of the log instance to retrieve
+	 * @return An implementation of the {@link Log} interface
+	 */
+	public static Log getLog(String name) {
+		Log log = null;
 
-        if (logMap.containsKey(name)) {
-            log = logMap.get(name);
-        } else {
-            log = new LogByLog4j(Logger.getLogger(name));
-            logMap.put(name, log);
-        }
+		if (logMap.containsKey(name)) {
+			log = logMap.get(name);
+		} else {
+			log = new LogByLog4j(Logger.getLogger(name));
+			logMap.put(name, log);
+		}
+		return log;
+	}
 
-        return log;
-    }
-
-    /**
-     * Shortcut for <code>getLogger(clazz.getName())</code>.
-     * 
-     * @param clazz The name of <code>clazz</code> will be used as the name of
-     *            the log instance to retrieve. See {@link getLogger(String)}
-     *            for more detailed information.
-     */
-    public static Log getLog(Class<?> clazz) {
-        return getLog(clazz.getName());
-    }
-
+	/**
+	 * Shortcut for <code>getLogger(clazz.getName())</code>.
+	 * 
+	 * @param clazz The name of <code>clazz</code> will be used as the name of
+	 *        the log instance to retrieve. See {@link getLogger(String)} for
+	 *        more detailed information.
+	 */
+	public static Log getLog(Class<?> clazz) {
+		return getLog(clazz.getName());
+	}
 }
