@@ -38,7 +38,7 @@ import java.util.Formatter;
  * 
  * <pre>
  * if (log.isDebugEnabled()) {
- *     log.debug(&quot;Log &quot; + &quot;this &quot; + &quot;message&quot;);
+ * 	log.debug(&quot;Log &quot; + &quot;this &quot; + &quot;message&quot;);
  * }
  * </pre>
  * 
@@ -83,321 +83,321 @@ import java.util.Formatter;
  */
 public interface Log {
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param message Message object to log
-     */
-    void trace(String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param message Message object to log
+	 */
+	void trace(String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     */
-    void trace(Throwable t, String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 */
+	void trace(Throwable t, String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void trace(String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void trace(String message, Object... params);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void trace(Throwable t, String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#TRACE TRACE}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void trace(Throwable t, String message, Object... params);
 
-    /**
-     * Check whether this category is enabled for the
-     * {@link org.apache.log4j.Level#TRACE TRACE} level.
-     * 
-     * @return boolean - <code>true</code> if this category is enabled for
-     *         level TRACE, <code>false</code> otherwise.
-     */
-    boolean isTraceEnabled();
+	/**
+	 * Check whether this category is enabled for the
+	 * {@link org.apache.log4j.Level#TRACE TRACE} level.
+	 * 
+	 * @return boolean - <code>true</code> if this category is enabled for
+	 *         level TRACE, <code>false</code> otherwise.
+	 */
+	boolean isTraceEnabled();
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param message Message object to log
-     */
-    void debug(String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param message Message object to log
+	 */
+	void debug(String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     */
-    void debug(Throwable t, String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 */
+	void debug(Throwable t, String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void debug(String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void debug(String message, Object... params);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void debug(Throwable t, String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#DEBUG DEBUG}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void debug(Throwable t, String message, Object... params);
 
-    /**
-     * Check whether this category is enabled for the
-     * {@link org.apache.log4j.Level#DEBUG DEBUG} level.
-     * 
-     * @return boolean - <code>true</code> if this category is enabled for
-     *         level DEBUG, <code>false</code> otherwise.
-     */
-    boolean isDebugEnabled();
+	/**
+	 * Check whether this category is enabled for the
+	 * {@link org.apache.log4j.Level#DEBUG DEBUG} level.
+	 * 
+	 * @return boolean - <code>true</code> if this category is enabled for
+	 *         level DEBUG, <code>false</code> otherwise.
+	 */
+	boolean isDebugEnabled();
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param message Message object to log
-     */
-    void info(String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param message Message object to log
+	 */
+	void info(String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     */
-    void info(Throwable t, String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 */
+	void info(Throwable t, String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void info(String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void info(String message, Object... params);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void info(Throwable t, String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#INFO INFO}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void info(Throwable t, String message, Object... params);
 
-    /**
-     * Check whether this category is enabled for the
-     * {@link org.apache.log4j.Level#INFO INFO} level.
-     * 
-     * @return boolean - <code>true</code> if this category is enabled for
-     *         level INFO, <code>false</code> otherwise.
-     */
-    boolean isInfoEnabled();
+	/**
+	 * Check whether this category is enabled for the
+	 * {@link org.apache.log4j.Level#INFO INFO} level.
+	 * 
+	 * @return boolean - <code>true</code> if this category is enabled for
+	 *         level INFO, <code>false</code> otherwise.
+	 */
+	boolean isInfoEnabled();
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param message Message object to log
-     */
-    void warn(String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param message Message object to log
+	 */
+	void warn(String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     */
-    void warn(Throwable t, String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 */
+	void warn(Throwable t, String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void warn(String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void warn(String message, Object... params);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void warn(Throwable t, String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#WARN WARN}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void warn(Throwable t, String message, Object... params);
 
-    /**
-     * Check whether this category is enabled for the
-     * {@link org.apache.log4j.Level#WARN WARN} level.
-     * 
-     * @return boolean - <code>true</code> if this category is enabled for
-     *         level WARN, <code>false</code> otherwise.
-     */
-    boolean isWarnEnabled();
+	/**
+	 * Check whether this category is enabled for the
+	 * {@link org.apache.log4j.Level#WARN WARN} level.
+	 * 
+	 * @return boolean - <code>true</code> if this category is enabled for
+	 *         level WARN, <code>false</code> otherwise.
+	 */
+	boolean isWarnEnabled();
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param message Message object to log
-     */
-    void error(String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param message Message object to log
+	 */
+	void error(String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     */
-    void error(Throwable t, String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 */
+	void error(Throwable t, String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void error(String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void error(String message, Object... params);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void error(Throwable t, String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#ERROR ERROR}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void error(Throwable t, String message, Object... params);
 
-    /**
-     * Check whether this category is enabled for the
-     * {@link org.apache.log4j.Level#ERROR ERROR} level.
-     * 
-     * @return boolean - <code>true</code> if this category is enabled for
-     *         level ERROR, <code>false</code> otherwise.
-     */
-    boolean isErrorEnabled();
+	/**
+	 * Check whether this category is enabled for the
+	 * {@link org.apache.log4j.Level#ERROR ERROR} level.
+	 * 
+	 * @return boolean - <code>true</code> if this category is enabled for
+	 *         level ERROR, <code>false</code> otherwise.
+	 */
+	boolean isErrorEnabled();
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param message Message object to log
-     */
-    void fatal(String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param message Message object to log
+	 */
+	void fatal(String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     */
-    void fatal(Throwable t, String message);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 */
+	void fatal(Throwable t, String message);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void fatal(String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void fatal(String message, Object... params);
 
-    /**
-     * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
-     * level.
-     * 
-     * @see org.apache.log4j.Logger#debug(Object)
-     * @see String#format(String, Object...)
-     * @see Formatter#format(String, Object...)
-     * @param t The exception to log, including it's stacktrace
-     * @param message Message object to log
-     * @param params Formatting parameters
-     */
-    void fatal(Throwable t, String message, Object... params);
+	/**
+	 * Log a message object with the {@link org.apache.log4j.Level#FATAL FATAL}
+	 * level.
+	 * 
+	 * @see org.apache.log4j.Logger#debug(Object)
+	 * @see String#format(String, Object...)
+	 * @see Formatter#format(String, Object...)
+	 * @param t The exception to log, including it's stacktrace
+	 * @param message Message object to log
+	 * @param params Formatting parameters
+	 */
+	void fatal(Throwable t, String message, Object... params);
 
-    /**
-     * Check whether this category is enabled for the
-     * {@link org.apache.log4j.Level#FATAL FATAL} level.
-     * 
-     * @return boolean - <code>true</code> if this category is enabled for
-     *         level FATAL, <code>false</code> otherwise.
-     */
-    boolean isFatalEnabled();
+	/**
+	 * Check whether this category is enabled for the
+	 * {@link org.apache.log4j.Level#FATAL FATAL} level.
+	 * 
+	 * @return boolean - <code>true</code> if this category is enabled for
+	 *         level FATAL, <code>false</code> otherwise.
+	 */
+	boolean isFatalEnabled();
 }
