@@ -10,7 +10,7 @@
 		Supports printf style message format for performance and ease of use and extends log4j logging api with Java 5
 		var args.
 	</description>
-	<url>http://code.google.com/p/logfacade/</url>
+	<url>http://logfacade.jworx.com/</url>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
