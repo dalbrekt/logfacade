@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jworx.logfacade</groupId>
 	<artifactId>logfacade</artifactId>
-	<version>1.1</version>
+	<version>1.1.1</version>
 	<name>Log Facade</name>
 	<url>http://logfacade.jworx.com/</url>
 	<description>
