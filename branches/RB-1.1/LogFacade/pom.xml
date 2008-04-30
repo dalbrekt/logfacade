@@ -36,21 +36,6 @@
 		<developerConnection>https://logfacade.googlecode.com/svn/trunk/</developerConnection>
 		<url>http://logfacade.googlecode.com/svn/trunk/</url>
 	</scm>
-	<repositories>
-		<repository>
-			<releases>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-			<snapshots>
-				<updatePolicy>never</updatePolicy>
-				<checksumPolicy>fail</checksumPolicy>
-			</snapshots>
-			<id>mavenrepo</id>
-			<name>Repo1 Maven2</name>
-			<url>http://repo1.maven.org/maven2</url>
-		</repository>
-	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
