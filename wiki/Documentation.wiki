@@ -35,7 +35,7 @@ To use with Maven 2 add the following dependency to your pom.xml:
 <dependency>
     <groupId>com.jworx.logfacade</groupId>
     <artifactId>logfacade</artifactId>
-    <version>1.0</version>
+    <version>1.1.1</version>
 </dependency>
 }}}
 
