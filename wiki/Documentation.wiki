@@ -1,4 +1,6 @@
-#summary Log Facade documentation
+#summary LogFacade Documentation
+
+<wiki:toc max_depth="3" />
 
 = About =
 
